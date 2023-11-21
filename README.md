@@ -1,2 +1,2 @@
 # Projeto-LM
-projeto livro pub disciplina linguagem de marcaçao
+projeto Livro Pub disciplina linguagem de marcação
