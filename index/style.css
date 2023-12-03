@@ -2,7 +2,7 @@
   font-family: 'Itim';
   font-style: normal;
   font-weight: 400;
-  src: url(font/Itim-Regular.ttf) format('woff2');
+  src: url(../font/Itim-Regular.ttf) format('woff2');
   unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A
 }
 * {
@@ -100,7 +100,7 @@ input:focus {
 /* HEADER */
 header {
   margin-top: 89.77px;
-  background-image: url(images/reserve-na-biblioteca-com-livro-aberto.jpg);
+  background-image: url(../images/header-1.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -360,6 +360,7 @@ footer {
 
 /*1024*/
 @media (max-width: 1024px) {
+  /*NAV*/
   .logo {
     width: 4rem;
     height: 4rem;
@@ -390,6 +391,8 @@ footer {
     width: 10rem;
     height: 15rem;
     }
+  
+  /*CARROSSEL*/
   .div-carrossel {
   max-width: 70vh;
   }
@@ -400,6 +403,8 @@ footer {
     width: 8rem;
     height: 12rem;
   }
+  
+  /*AVALIAÇÃO*/
   .div-pessoa1, .div-pessoa2 {
     padding: 1rem;
     gap: 7vh;
@@ -520,17 +525,20 @@ footer {
     font-size: 0.9rem;
   }
   header {
+    background-image: url(../images/header-2.jpg);
     margin-top: 40px;
     height: calc(100vh - 40px);
+    align-items: center;
   }
-  header section {
+  .header {
     margin-left: 1vw;
     color: white;
     width: 50vw;
     font-size: 1rem;
     margin: 20px;
+    
   }
-  header section h2 {
+  .header h2 {
     margin: 2vh auto;
     font-size: 1rem;
   }
