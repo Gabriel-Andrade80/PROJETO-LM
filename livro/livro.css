@@ -134,11 +134,12 @@ div{
   grid-area: main;
 }
 .baixar {
-  background-color: blue;
+  background-color: #001E3C;
   color: white;
   border: none;
   padding: 10px 37%;
   border-radius: 10mm;
+  gab: 5px;
 }
 /*footer */
 footer {

@@ -35,16 +35,27 @@
   <main>
     <section class="formulario">
       <form method="POST">
-        <fieldset>
-          <p><label>Email:</label>
-            <input id='id-email' name="email" type="email" required>
+        
+          <p>
+            <label for="id-email">Email:</label> <br>
+            <input type="email" name="email" id="id-email" placeholder="Digite seu email..." required
           </p>
-  
-          <p><label>Senha:</label>
-            <input id='id-senha' name="senha" type="password" required>
+          <p><br></p>
+          <p>
+            <label for="id-senha">Senha:</label> <br>
+            <input type="password" name="senha" id="id-senha" placeholder="********" required
           </p>
-        </fieldset>
+          <p><br></p>
+          <p>
+            <input type="submit" value="Entrar" id="id-entrar">
+          </p>
+        
       </form>
+      <section>
+        <p>
+          <a href="../cadastro/cadastro.html" class="link-cadastro">Primeira vez? Cadastre-se</a>
+        </p>
+      </section>
     </section>
   </main>
   

@@ -112,13 +112,49 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 20px;
   width: 100%;
   height: 100%;
-  padding: 0 10%;
-  
+  color: black;
+  background-color: rgba(0, 0, 0, 0.5);
+  gap: 1.5em;
+}
+form {
+  background-color: rgba(255,255,255, 0.5);
+  padding: 4%;
+  border-radius: 10%;
+  margin-left: 30vh;
 }
 
+label {
+  font-size: 20px;
+}
+#id-entrar {
+  background-color: #001E3C;
+  color: white;
+  padding: 5px;
+  width: 150px;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  border: 2px white solid;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#id-entrar:hover{
+  background-color: white;
+  color: #001E3C;
+  border: 2px #001E3C solid;
+  transform: scale(1.2,1.1)
+}
+.link-cadastro {
+  margin-left: 30vh;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: white;
+  text-decoration: underline;
+  
+  transition: all 0.5s;
+}
 /*FOOTER*/
 footer {
   background-color: #001E3C;
@@ -190,5 +226,118 @@ footer {
   main {
       margin-top: 72px;
       height: calc(100vh - 72px);
+  }
+}
+/*768*/
+@media (max-width: 768px) {
+  .logo {
+    width: 3rem;
+    height: 3rem;
+  }
+  .barra-fixa{
+    gap: 6px;
+  }
+  nav li {
+    font-size: 1rem;
+  }
+
+  span-login,.button-login,.login {
+    padding: 4px;
+    font-size: 1rem;
+    gap: 5px;
+  }
+  .lupa{
+    font-size: 1rem;
+  }
+  header {
+    margin-top: 56px;
+    height: calc(100vh - 56px);
+  }
+
+  .img {
+    width: 10rem;
+    height: 13rem;
+    }
+
+  .fim {
+    padding: 1rem;
+    line-height: 2rem;
+    gap: 40px;
+    font-size: 1rem;
+    }
+  .redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 2rem;
+  }
+  .fim2 {
+    padding: 1rem 0px;
+    font-size: 0.75rem;
+  }
+}
+/*570*/
+@media (max-width: 570px) {
+  .logo {
+    width: 2rem;
+    height: 2rem;
+  }
+  .barra-fixa{
+    gap: 3.8px;
+  }
+  span-login,.button-login,.login {
+    padding: 2px;
+    font-size: 0.7rem;
+    gap: 4px;
+  }
+  .lupa{
+    font-size: 0.9rem;
+  }
+  header {
+    background-image: url(../images/header-2.jpg);
+    margin-top: 40px;
+    height: calc(100vh - 40px);
+    align-items: center;
+  }
+  .header {
+    margin-left: 1vw;
+    color: white;
+    width: 50vw;
+    font-size: 1rem;
+    margin: 20px;
+
+  }
+  .header h2 {
+    margin: 2vh auto;
+    font-size: 1rem;
+  }
+
+  .img {
+    width: 8rem;
+    height: 12rem;
+    }
+
+  picture p {
+    line-height: 15px;
+    bottom: 9%;
+
+  .fim {
+    padding: 0.5rem;
+    line-height: 2rem;
+    gap: 30px;
+    }
+  .redes{
+    gap: 15px;
+  }
+  .fim2 {
+    padding: 1rem 0px;
+    font-size: 0.6rem;
+  }
+/*425*/  
+  @media (max-width: 425px) {
+    .redes {
+        flex-flow: row wrap;
+    }
   }
 }
