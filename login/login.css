@@ -98,6 +98,11 @@ input:focus {
 .sub a:hover {
   text-decoration:underline;
 }
+/*FIM-NAV*/
+
+/*HAMBURGUER*/
+
+/*FIM HAMBURGUER*/
 
 /*MAIN*/
 main {
@@ -118,18 +123,20 @@ main {
   color: black;
   background-color: rgba(0, 0, 0, 0.5);
   gap: 1.5em;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 form {
   background-color: rgba(255,255,255, 0.5);
-  padding: 4%;
+  padding: 3% 4%;
   border-radius: 10%;
   margin-left: 30vh;
   display: flex;
   flex-flow: column;
   gap: 15px;
 }
-
+form input {
+  font-size: 1.2rem;
+}
 #id-entrar {
   background-color: #001E3C;
   color: white;
@@ -138,7 +145,6 @@ form {
   border-radius: 50px;
   font-size: 1.5rem;
   border: 2px white solid;
-  transition: all 0.5s;
   cursor: pointer;
 }
 
@@ -150,13 +156,12 @@ form {
 }
 .link-cadastro {
   margin-left: 30vh;
-  margin-top: 10px;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: white;
   text-decoration: underline;
-  
 }
 .botao-logar {
+  margin-top: 15px;
   align-self: center;
 }
 /*FOOTER*/
@@ -282,62 +287,67 @@ footer {
   }
 }
 /*570*/
-@media (max-width: 570px) {
-  .logo {
-    width: 2rem;
-    height: 2rem;
-  }
-  .barra-fixa{
-    gap: 3.8px;
-  }
-  span-login,.button-login,.login {
-    padding: 2px;
-    font-size: 0.7rem;
-    gap: 4px;
-  }
-  .lupa{
-    font-size: 0.9rem;
-  }
-  header {
-    background-image: url(../images/header-2.jpg);
-    margin-top: 40px;
-    height: calc(100vh - 40px);
-    align-items: center;
-  }
-  .header {
-    margin-left: 1vw;
-    color: white;
-    width: 50vw;
-    font-size: 1rem;
-    margin: 20px;
+    @media (max-width: 570px) {
+    .logo {
+      width: 2rem;
+      height: 2rem;
+    }
+    .barra-fixa{
+      gap: 3.8px;
+    }
+    span-login,.button-login,.login {
+      padding: 2px;
+      font-size: 0.7rem;
+      gap: 4px;
+    }
+    .lupa{
+      font-size: 0.9rem;
+    }
+    header {
+      background-image: url(../images/header-2.jpg);
+      margin-top: 40px;
+      height: calc(100vh - 40px);
+      align-items: center;
+    }
+    .header {
+      margin-left: 1vw;
+      color: white;
+      width: 50vw;
+      font-size: 1rem;
+      margin: 20px;
 
-  }
-  .header h2 {
-    margin: 2vh auto;
-    font-size: 1rem;
-  }
-
-  .img {
-    width: 8rem;
-    height: 12rem;
+    }
+    .header h2 {
+      margin: 2vh auto;
+      font-size: 1rem;
     }
 
-  picture p {
-    line-height: 15px;
-    bottom: 9%;
-
-  .fim {
-    padding: 0.5rem;
-    line-height: 2rem;
-    gap: 30px;
+    .formulario {
+      align-items: center;
+      font-size: 1rem;
     }
-  .redes{
-    gap: 15px;
-  }
-  .fim2 {
-    padding: 1rem 0px;
-    font-size: 0.6rem;
-  }
+    form {
+      margin: 0;
+    }
+    form input {
+      font-size: 1rem;
+    }
+    .link-cadastro {
+      margin-left: 0;
+      font-size: 0.8rem
+    }
+    .fim {
+      padding: 0.5rem;
+      line-height: 2rem;
+      gap: 30px;
+      }
+    .redes{
+      gap: 15px;
+    }
+    .fim2 {
+      padding: 1rem 0px;
+      font-size: 0.6rem;
+    }
 /*425*/  
   @media (max-width: 425px) {
     .redes {

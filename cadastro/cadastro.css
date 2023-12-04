@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   font-family: Itim;
+  transition: all 0.5s;
 }
 body {
   background-color: #F1F2F6;
@@ -51,7 +52,7 @@ span-login,.button-login,.login {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  transition: all 0.4s;
+
 }
 .login:hover {
   background-color: #F1F2F6;
@@ -107,6 +108,7 @@ main {
   background-attachment: fixed;
   height: calc(100vh - 89.77px);
 }
+
 .formulario {
   display: flex;
   flex-direction: column;
@@ -119,6 +121,7 @@ main {
   gap: 1.5em;
   font-size: 1.5rem;
 }
+
 form {
   background-color: rgba(255,255,255, 0.5);
   padding: 1% 5%;
@@ -129,6 +132,10 @@ form {
   gap: 15px;
 }
 
+form input {
+  font-size: 1.2rem;
+}
+
 #id-cadastrar {
   background-color: #001E3C;
   color: white;
@@ -137,7 +144,6 @@ form {
   border-radius: 50px;
   font-size: 1.5rem;
   border: 2px white solid;
-  transition: all 0.5s;
   cursor: pointer;
 }
 
@@ -152,7 +158,6 @@ form {
   font-size: 1.2rem;
   color: white;
   text-decoration: underline;
-  transition: all 0.5s;
 }
 .botao-cadastrar {
   margin-top: 15px;
@@ -316,15 +321,13 @@ footer {
     font-size: 1rem;
   }
 
-  .img {
-    width: 8rem;
-    height: 12rem;
-    }
-
-  picture p {
-    line-height: 15px;
-    bottom: 9%;
-
+  .formulario {
+    align-items: center;
+    font-size: 1rem;
+  }
+  form input {
+    font-size: 1rem;
+  }
   .fim {
     padding: 0.5rem;
     line-height: 2rem;
