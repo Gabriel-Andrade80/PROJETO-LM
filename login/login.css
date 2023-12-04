@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   font-family: Itim;
+  transition: all 0.5s;
 }
 body {
   background-color: #F1F2F6;
@@ -51,7 +52,7 @@ span-login,.button-login,.login {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  transition: all 0.4s;
+  
 }
 .login:hover {
   background-color: #F1F2F6;
@@ -117,17 +118,18 @@ main {
   color: black;
   background-color: rgba(0, 0, 0, 0.5);
   gap: 1.5em;
+  font-size: 2rem;
 }
 form {
   background-color: rgba(255,255,255, 0.5);
   padding: 4%;
   border-radius: 10%;
   margin-left: 30vh;
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
 }
 
-label {
-  font-size: 20px;
-}
 #id-entrar {
   background-color: #001E3C;
   color: white;
@@ -153,7 +155,9 @@ label {
   color: white;
   text-decoration: underline;
   
-  transition: all 0.5s;
+}
+.botao-logar {
+  align-self: center;
 }
 /*FOOTER*/
 footer {
