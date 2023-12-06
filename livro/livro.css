@@ -14,7 +14,6 @@ body {
   background-color: #F1F2F6;
 }
 
-}
 nav{
   display: grid;
 }
@@ -111,10 +110,11 @@ picture{
 }
 
 p{
-  font-size: 10px;
+  font-size: 15px;
+  gap: 1px;
 }
 
-div{
+.span{
   display: grid;
   
   grid-template-areas:
@@ -123,15 +123,21 @@ div{
 
 .livro{
     transform: scale(0.8);
-    margin-top: 20px;
-    margin-left: 25px
-    max-width: 262px;
-    max-height: 401.618px;
+    margin-top: 50px;
+    margin-left: 50px;
+    max-width: 800px;
+    max-height: 800px;
     grid-area: aside;
     
 }
+
+g-main2{
+  grid-area: main;
+}
+
 .g-main{
   grid-area: main;
+  margin-top: 150px;
 }
 .baixar {
   background-color: #001E3C;

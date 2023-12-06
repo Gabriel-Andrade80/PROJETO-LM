@@ -288,6 +288,7 @@ footer {
 }
 /*570*/
     @media (max-width: 570px) {
+    /*NAV*/
     .logo {
       width: 2rem;
       height: 2rem;
@@ -303,6 +304,8 @@ footer {
     .lupa{
       font-size: 0.9rem;
     }
+
+    /*HEADER*/
     header {
       background-image: url(../images/header-2.jpg);
       margin-top: 40px;
@@ -336,6 +339,8 @@ footer {
       margin-left: 0;
       font-size: 0.8rem
     }
+      
+    /*FOOTER*/
     .fim {
       padding: 0.5rem;
       line-height: 2rem;
