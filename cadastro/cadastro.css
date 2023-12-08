@@ -15,7 +15,7 @@ body {
   background-color: #F1F2F6;
 }
 /* NAV */
-.barra-fixa{
+.barra-fixa {
   top: 0;
   position: fixed;
   width: 100%;
@@ -24,26 +24,34 @@ body {
   justify-content: center;
   align-items: center;
   justify-items: center;
-  z-index: 1;
+  z-index: 100;
   gap: 10px;
   background-color: #DADADA;
 }
+
 .logo {
   padding: 4px 25px;
-  width: 13vh;
+  width: 6vw;
+  /* height: 93.59px; */
 }
-.opcoes {
+
+.opcoes,
+.opcoes-menu {
   list-style: none;
   display: contents;
   text-align: center;
 }
+
 nav li {
   color: #001E3C;
   font-size: 1.5rem;
 }
-span-login,.button-login,.login {
+
+span-login,
+.button-login,
+.login {
   padding: 5px;
-  border-radius: 10%;  
+  border-radius: 10%;
   color: white;
   background-color: #001E3C;
   font-size: 1.5rem;
@@ -52,18 +60,22 @@ span-login,.button-login,.login {
   align-items: center;
   justify-content: center;
   gap: 8px;
-
+  
 }
+
 .login:hover {
   background-color: #F1F2F6;
   color: #001E3C;
 }
-.shadow {   
+
+.shadow {
   box-shadow: 4px 4px 5px 2px rgba(0, 0, 0, 0.25);
 }
+
 .li-busca {
   width: 80%;
 }
+
 .div-busca {
   display: flex;
   border: 1px #001E3C solid;
@@ -72,10 +84,12 @@ span-login,.button-login,.login {
   align-items: center;
   width: 100%;
 }
+
 input:focus {
   box-shadow: 0 0 0 0;
   outline: 0;
 }
+
 .txt-busca {
   border: none;
   background-color: transparent;
@@ -83,32 +97,80 @@ input:focus {
   padding-left: 0.5rem;
   width: 100%;
 }
-.txt-busca:active{
+
+.txt-busca:active {
   border: none
 }
-.lupa{
+
+.lupa {
   padding-right: 0.2rem;
   cursor: pointer;
   font-size: 1.5rem;
 }
-.link a{
+
+.link a,
+.opcao a {
   text-decoration: none;
   color: inherit;
 }
-.sub a:hover {
-  text-decoration:underline;
+
+.sub a:hover,
+.opcao .a:hover {
+  text-decoration: underline;
 }
+/*FIM-NAV*/
+
+/*HAMBURGUER*/
+.secao-menu {
+  background-color: #DADADA;
+  position: fixed;
+  top: 44px;
+  right: -1000px;
+  z-index: 1;
+  /* height: 100%; */
+  bottom: 0px;
+  transition: all 1.1s !important;
+  width: 60%;
+  font-size: 1.4rem;
+  border-bottom: 2px solid #001E3C;
+  border-top: 2px solid #001E3C;
+  box-shadow: inset 0px -2px 10px 5px rgba(0, 30, 60,0.1), inset 0px 2px 10px 5px rgba(0, 30, 60,0.1);
+}
+.menu-hamburguer{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  height: 100%;
+  justify-content: space-evenly;
+}
+.icone-menu {
+  display: none;
+}
+.span-menu {
+  font-size: 2.2rem !important;
+}
+.opcoes-menu {
+  width: 100%;
+  height: 100%;
+}
+
+.borda-menu {
+  padding: 100px 0px;
+  border-bottom: 2px solid #001E3C;
+  border-top: 2px solid #001E3C;
+  width: 100%;
+  /* box-shadow: 0px -2px 2px rgba(0, 30, 60,0.4), 0px 2px 2px rgba(0,30,60,0.4); */
+}
+/*FIM HAMBURGUER*/
 
 /*MAIN*/
 main {
-  margin-top: 89.77px;
+  margin-top: 93.59px;
+  height: calc(100vh - 93.59px);
   background-image: url(../images/imagem-login.jpg);  
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
-  height: calc(100vh - 89.77px);
 }
-
 .formulario {
   display: flex;
   flex-direction: column;
@@ -121,21 +183,18 @@ main {
   gap: 1.5em;
   font-size: 1.5rem;
 }
-
-form {
+.form {
   background-color: rgba(255,255,255, 0.5);
-  padding: 1% 5%;
+  padding: 3% 4%;
   border-radius: 10%;
-  margin-left: 30vh;
+  margin-left: 30vw;
   display: flex;
   flex-flow: column;
   gap: 15px;
 }
-
-form input {
+.form input {
   font-size: 1.2rem;
 }
-
 #id-cadastrar {
   background-color: #001E3C;
   color: white;
@@ -147,14 +206,14 @@ form input {
   cursor: pointer;
 }
 
-#id-cadastrar:hover{
+#id-entrar:hover{
   background-color: white;
   color: #001E3C;
   border: 2px #001E3C solid;
   transform: scale(1.2,1.1)
 }
 .link-login {
-  margin-left: 30vh;
+  margin-left: 30vw;
   font-size: 1.2rem;
   color: white;
   text-decoration: underline;
@@ -210,6 +269,7 @@ footer {
 }
 
 /*RESPONSIVIDADE*/
+/*1024*/
 @media (max-width: 1024px){
   /*NAV*/
   .logo {
@@ -232,8 +292,18 @@ footer {
     font-size: 1rem;
   }
   main {
-      margin-top: 72px;
-      height: calc(100vh - 72px);
+    margin-top: 76px;
+    height: calc(100vh - 76px);
+  }
+  .fim {
+    padding: 1rem;
+    line-height: 2rem;
+    gap: 40px;
+    font-size: 2rem;
+  }
+
+  .redes {
+    gap: 20px;
   }
 }
 /*768*/
@@ -249,23 +319,19 @@ footer {
     font-size: 1rem;
   }
 
-  span-login,.button-login,.login {
+  /* span-login,.button-login,.login {
     padding: 4px;
     font-size: 1rem;
     gap: 5px;
-  }
+  } */
+
   .lupa{
     font-size: 1rem;
   }
-  header {
-    margin-top: 56px;
-    height: calc(100vh - 56px);
+  main {
+    margin-top: 60px;
+    height: calc(100vh - 60px);
   }
-
-  .img {
-    width: 10rem;
-    height: 13rem;
-    }
 
   .fim {
     padding: 1rem;
@@ -286,48 +352,66 @@ footer {
   }
 }
 /*570*/
-@media (max-width: 570px) {
-  .logo {
-    width: 2rem;
-    height: 2rem;
-  }
+  @media (max-width: 570px) {
+  /*NAV*/
   .barra-fixa{
     gap: 3.8px;
   }
   span-login,.button-login,.login {
-    padding: 2px;
-    font-size: 0.7rem;
-    gap: 4px;
+    padding: 5px;
+    gap: 8px;
+    font-size: 1.5rem; 
   }
   .lupa{
     font-size: 0.9rem;
   }
-  header {
-    background-image: url(../images/header-2.jpg);
-    margin-top: 40px;
-    height: calc(100vh - 40px);
-    align-items: center;
-  }
-  .header {
-    margin-left: 1vw;
-    color: white;
-    width: 50vw;
-    font-size: 1rem;
-    margin: 20px;
 
+  .li-busca {
+    grid-column-start: 2;
+    grid-column-end: 5;
   }
-  .header h2 {
-    margin: 2vh auto;
-    font-size: 1rem;
+  nav li {
+    font-size: 0.7rem;
+  }
+
+  .opcoes .link {
+    display: none;
+  }
+
+  .login-grid {
+    grid-column-start: 5;
+  }
+
+  /*MENU*/
+  .icone-menu{
+    display: block;
+    cursor: pointer;
+  }
+  .animar {
+    right: 0px;
+  }
+
+  /*HEADER*/
+  main {
+    background-image: url(../images/header-2.jpg);
   }
 
   .formulario {
     align-items: center;
     font-size: 1rem;
   }
-  form input {
+  .form {
+    margin: 0;
+  }
+  .form input {
     font-size: 1rem;
   }
+  .link-login {
+    margin-left: 0;
+    font-size: 0.8rem
+  }
+
+  /*FOOTER*/
   .fim {
     padding: 0.5rem;
     line-height: 2rem;
@@ -341,9 +425,8 @@ footer {
     font-size: 0.6rem;
   }
 /*425*/  
-  @media (max-width: 425px) {
-    .redes {
-        flex-flow: row wrap;
-    }
+@media (max-width: 425px) {
+  .redes {
+      flex-flow: row wrap;
   }
-}
+}}

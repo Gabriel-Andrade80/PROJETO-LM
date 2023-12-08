@@ -8,33 +8,60 @@
   <link rel="shortcut icon" href="../images/logo books ellipse.png" type="image/x-icon">
   <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-  <title>LivroPub</title>
+  <title>LivroPub - Cadastro</title>
 </head>
-<body>
-  <!--BARRA DE NAVEGAÇÃO FIXA-->
-  <nav class="barra-fixa">
-    <a href="../index/index.html"><img src="../images/logo books ellipse.png" alt="" class="logo"></a>
-    <ul class="opcoes">
-      <li class="li-busca">
-        <section class="div-busca">
-          <input type="text" placeholder="Dom Casmurro..." class="txt-busca">
-          <iconify-icon icon="material-symbols:search" class="lupa"></iconify-icon>
-        </section>
-      </li>
-      <li class=" link sub"><a href='#'>Recomendados</a></li>
-      <li class=" link sub"><a href='#'>Categorias</a></li>
-      <li class=" link">
-        <button class="button-login shadow">
-          <a href="../login/login.html" class="login">Login
-            <iconify-icon icon="material-symbols:login" class="span-login"></iconify-icon>
-          </a>
-        </button>
-      </li>
-    </ul>
-  </nav>
+  
+  <body>
+    <!--BARRA DE NAVEGAÇÃO FIXA-->
+    <nav class="barra-fixa">
+      <a href="../index/index.html"><img src="../images/logo books ellipse.png" alt="" class="logo"></a>
+      <ul class="opcoes">
+        <li class="li-busca">
+          <form method="post">
+            <section class="div-busca">
+              <input type="text" id="id-busca" name="busca" placeholder="Dom Casmurro..." class="txt-busca">
+              <label for="id-busca" style="display: flex;">
+                <iconify-icon icon="material-symbols:search" class="lupa"></iconify-icon>
+              </label>
+            </section>
+          </form>
+        </li>
+        <li class=" link sub"><a href='#'>Recomendados</a></li>
+        <li class=" link sub"><a href='#'>Categorias</a></li>
+        <li class=" link login-grid">
+          <button class="button-login shadow">
+            <a href="../login/login.html" class="login">Login
+              <iconify-icon icon="material-symbols:login" class="span-login"></iconify-icon>
+            </a>
+          </button>
+        </li>
+        <li class="icone-menu">  
+        <span class="material-symbols-outlined span-menu">menu</span>
+        </li>
+      </ul>   
+    </nav>
+    <!--FIM DA BARRA DE NAVEGAÇÃO FIXA-->
+    <!--MENU HAMBURGUER-->
+    <section class="secao-menu">
+      <div class="menu-hamburguer">
+        <ul class="opcoes-menu">
+          <li class="opcao"><a href='#'>Recomendados</a></li>
+          <li class="opcao borda-menu"><a href='#'>Categorias</a></li>
+          <li class="opcao login-menu">
+            <button class="button-login shadow">
+              <a href="../login/login.html" class="login">Login
+                <iconify-icon icon="material-symbols:login" class="span-login"></iconify-icon>
+              </a>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+<!--FIM DO MENU HAMBURGUER-->
+<!--INÍCIO DA SESSÃO DE CADASTRO-->
   <main>
     <section class="formulario">
-      <form method="POST">
+      <form class="form" method="POST">
           <p>
             <label for="id-email">Nome Completo:</label> <br>
             <input type="text" name="nome" id="id-nome" placeholder="Digite seu nome..." required
@@ -88,5 +115,6 @@
       </p>
     </section>
   </footer>
+  <script src="../menu.js"></script>
 </body>
 </html>

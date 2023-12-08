@@ -14,7 +14,7 @@
 <body>
   <!--BARRA DE NAVEGAÇÃO FIXA-->
   <nav class="barra-fixa">
-    <a href="#"><img src="../images/logo books ellipse.png" alt="" class="logo"></a>
+    <a href="index.html"><img src="../images/logo books ellipse.png" alt="" class="logo"></a>
     <ul class="opcoes">
       <li class="li-busca">
         <form method="post">
@@ -36,7 +36,7 @@
         </button>
       </li>
       <li class="icone-menu">  
-      <span class="material-symbols-outlined">menu</span>
+      <span class="material-symbols-outlined span-menu">menu</span>
       </li>
     </ul>   
   </nav>
@@ -46,7 +46,7 @@
     <div class="menu-hamburguer">
       <ul class="opcoes-menu">
         <li class="opcao"><a href='#'>Recomendados</a></li>
-        <li class="opcao"><a href='#'>Categorias</a></li>
+        <li class="opcao borda-menu"><a href='#'>Categorias</a></li>
         <li class="opcao login-menu">
           <button class="button-login shadow">
             <a href="../login/login.html" class="login">Login
@@ -64,11 +64,15 @@
       <h1>BIBLIOTECA DE LIVROS
         COM DOMÍNIO PÚBLICO</h1>
       <h2>Conheça nossa variedade de livros</h2>
-      <button class="categoria"><a href="#">Ver Categorias</a></button>
+      
+      <a href="#">
+        <button class="categoria">Ver Categorias</button>
+      </a>
     </section>
   </header>
 
-  <main> <!-- CONTEÚDO PRINCIPAL -->
+<!-- CONTEÚDO PRINCIPAL -->
+  <main> 
     <section id="um"> <!-- SESSÃO CARROSSEL -->
       <h1 class="titulos">POPULARES</h1>
       <section class="div-carrossel">
@@ -80,12 +84,24 @@
       </button>
       <div class="carrossel-wrapper">  
       <div class="carrossel">
+        <a >
         <img src="../images/20_mil_leguas.jpg" class="img current-img">
+        </a>
+        <a >
         <img src="../images/cortico.jpg" class="img">
+        </a>
+        <a >
         <img src="../images/ilha_tesouro.jpg" class="img">
+        </a>
+        <a >
         <img src="../images/divina_comedia.jpg" class="img">
+        </a>
+        <a >
         <img src="../images/dom_casmurro.jpg" class="img">
+        </a>
+        <a >
         <img src="../images/viagem_centro_terra.webp" class="img">
+        </a>
       </div>
       </div>
       </section>
@@ -139,7 +155,10 @@
         <p>Dom Casmurro</p>
         </picture>    
       </div>
-        <button class="ver-mais"><a href="#">Ver Mais</a></button>   
+        <a href="#">
+        <button class="ver-mais">Ver Mais</button>
+        </a>
+        <!-- <button class="ver-mais"><a href="#">Ver Mais</a></button>    -->
     </section>
     
     <section id="tres"> <!-- SESSÃO AVALIAÇÃO -->
@@ -163,8 +182,8 @@
     </section>
   </main>
   
-
-  <footer> <!-- RODAPÉ -->
+<!-- RODAPÉ -->
+  <footer> 
     <section class="fim link">
       <a href="#">Sobre Nós</a>
       <a href="#">Termos de Uso</a>
@@ -185,6 +204,8 @@
       </p>
     </section>
   </footer>
-  <script src="script.js"></script>
+  
+  <script src="../carrossel.js"></script>
+  <script src="../menu.js"></script>
 </body>
 </html>

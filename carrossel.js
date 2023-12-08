@@ -32,20 +32,3 @@ controls.forEach((control) => {
   });
 });
 
-const icone = document.querySelector(".icone-menu");
-const animar = document.querySelector(".animar");
-const secao = document.querySelector(".secao-menu");
-// animar.classlist.remove("animar");
-
-icone.addEventListener("click", () => {
-  // if (!this.classList.contains('animar')) {
-  //     this.classList.add('animar');
-  // }
-  if (secao !== this && secao.classList.contains('animar')) {
-    secao.classList.remove('animar');
-  }
-
-  //Se o elemento clicado não tiver a classe animar ainda então aplicamos ela
-  if (!secao.classList.contains('animar')) {
-  secao.classList.add('animar')};
-});
