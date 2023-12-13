@@ -123,11 +123,12 @@ input:focus {
 /*HAMBURGUER*/
 .secao-menu {
   background-color: #DADADA;
+  display: none;
   position: fixed;
   top: 44px;
-  right: -1000px;
+  /* right: -1900px; */
   z-index: 1;
-  /* height: 100%; */
+  height: 100%;
   bottom: 0px;
   transition: all 1.1s !important;
   width: 60%;
@@ -352,7 +353,7 @@ footer {
   }
 }
 /*570*/
-  @media (max-width: 570px) {
+@media (max-width: 570px) {
   /*NAV*/
   .barra-fixa{
     gap: 3.8px;
@@ -383,6 +384,10 @@ footer {
   }
 
   /*MENU*/
+  .secao-menu {
+    right: -400px;
+    display: block;
+  }
   .icone-menu{
     display: block;
     cursor: pointer;
@@ -424,9 +429,10 @@ footer {
     padding: 1rem 0px;
     font-size: 0.6rem;
   }
+}
 /*425*/  
 @media (max-width: 425px) {
   .redes {
       flex-flow: row wrap;
   }
-}}
+}
