@@ -2,47 +2,70 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="cadastro.css">
   <link rel="shortcut icon" href="../images/logo books ellipse.png" type="image/x-icon">
   <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            transparent: 'transparent',
+            current: 'currentColor',
+            'white': '#ffffff',
+            'purple': '#3f3cbb',
+            'midnight': '#121063',
+            'metal': '#565584',
+            'tahiti': '#3ab7bf',
+            'silver': '#ecebff',
+            'bubble-gum': '#ff77e9',
+            'bermuda': '#78dcca',
+            'light-white':'#f5f5f5' ,
+            'back-opct':'rgba(0, 0, 0, 0.5)',
+          }
+        }
+      }
+    }
+  </script>
   <title>LivroPub - Cadastro</title>
 </head>
   
-  <body>
-    <!--BARRA DE NAVEGAÇÃO FIXA-->
-    <nav class="barra-fixa">
-      <a href="../index/index.html"><img src="../images/logo books ellipse.png" alt="" class="logo"></a>
-      <ul class="opcoes">
-        <li class="li-busca">
-          <form method="post">
-            <section class="div-busca">
-              <input type="text" id="id-busca" name="busca" placeholder="Dom Casmurro..." class="txt-busca">
-              <label for="id-busca" style="display: flex;">
-                <iconify-icon icon="material-symbols:search" class="lupa"></iconify-icon>
-              </label>
-            </section>
-          </form>
-        </li>
-        <li class=" link sub"><a href='#'>Recomendados</a></li>
-        <li class=" link sub"><a href='#'>Categorias</a></li>
-        <li class=" link login-grid">
-          <button class="button-login shadow">
-            <a href="../login/login.html" class="login">Login
-              <iconify-icon icon="material-symbols:login" class="span-login"></iconify-icon>
-            </a>
-          </button>
-        </li>
-        <li class="icone-menu">  
-        <span class="material-symbols-outlined span-menu">menu</span>
-        </li>
-      </ul>   
-    </nav>
-    <!--FIM DA BARRA DE NAVEGAÇÃO FIXA-->
-    <!--MENU HAMBURGUER-->
-    <section class="secao-menu">
+<body>
+  <!--BARRA DE NAVEGAÇÃO FIXA-->
+  <nav class="barra-fixa">
+    <a href="../index/index.html"><img src="../images/logo books ellipse.png" alt="" class="logo"></a>
+    <ul class="opcoes">
+      <li class="li-busca">
+        <form method="post">
+          <section class="div-busca">
+            <input type="text" id="id-busca" name="busca" placeholder="Dom Casmurro..." class="txt-busca">
+            <label for="id-busca" style="display: flex;">
+              <iconify-icon icon="material-symbols:search" class="lupa"></iconify-icon>
+            </label>
+          </section>
+        </form>
+      </li>
+      <li class=" link sub"><a href='#'>Recomendados</a></li>
+      <li class=" link sub"><a href='#'>Categorias</a></li>
+      <li class=" link login-grid">
+        <button class="button-login shadow">
+          <a href="../login/login.html" class="login">Login
+            <iconify-icon icon="material-symbols:login" class="span-login"></iconify-icon>
+          </a>
+        </button>
+      </li>
+      <li class="icone-menu">  
+      <span class="material-symbols-outlined span-menu">menu</span>
+      </li>
+    </ul>   
+  </nav>
+  <!--FIM DA BARRA DE NAVEGAÇÃO FIXA-->
+  <!--MENU HAMBURGUER-->
+  <section class="secao-menu">
       <div class="menu-hamburguer">
         <ul class="opcoes-menu">
           <li class="opcao"><a href='#'>Recomendados</a></li>
@@ -57,44 +80,57 @@
         </ul>
       </div>
     </section>
-<!--FIM DO MENU HAMBURGUER-->
-<!--INÍCIO DA SESSÃO DE CADASTRO-->
-  <main>
-    <section class="formulario">
-      <form class="form" method="POST">
+  <!--FIM DO MENU HAMBURGUER-->
+  <!--INÍCIO DA SESSÃO DE CADASTRO-->
+  <main class="main">
+    <div class="flex justify-evenly items-center bg-back-opct w-full h-full max-[768px]:flex-col max-[768px]:justify-center max-[768px]:gap-[2%]">
+      <section class="formulario">
+        <form class="form" method="POST">
+            <p>
+              <label for="id-email">Nome Completo:</label> <br>
+              <input type="text" name="nome" id="id-nome" placeholder="Digite seu nome..." required
+            </p>
+            <p>
+              <label for="id-email">Email:</label> <br>
+              <input type="email" name="email" id="id-email" placeholder="Digite seu email..." required
+            </p>  
+            <p>
+              <label for="id-senha">Senha:</label> <br>
+              <input type="password" name="senha" id="id-senha" placeholder="********" required
+            </p>  
+            <p>
+              <label for="id-confimar-senha">Confime a senha:</label> <br>
+              <input type="password" name="confirmar-senha" id="id-confirmar-senha" placeholder="********" required
+            </p>  
+            <p class="botao-cadastrar">
+              <input type="submit" value="Cadastrar" id="id-cadastrar">
+            </p>  
+        </form>
+        <section class="max-[768px]:absolute max-[768px]:bottom-[0.3%]">
           <p>
-            <label for="id-email">Nome Completo:</label> <br>
-            <input type="text" name="nome" id="id-nome" placeholder="Digite seu nome..." required
+            <a href="../login/login.html" class="link-login">Já possui conta? Faça o login</a>
           </p>
-          <p>
-            <label for="id-email">Email:</label> <br>
-            <input type="email" name="email" id="id-email" placeholder="Digite seu email..." required
-          </p>
-
-          <p>
-            <label for="id-senha">Senha:</label> <br>
-            <input type="password" name="senha" id="id-senha" placeholder="********" required
-          </p>
-
-          <p>
-            <label for="id-confimar-senha">Confime a senha:</label> <br>
-            <input type="password" name="confirmar-senha" id="id-confirmar-senha" placeholder="********" required
-          </p>
-
-          <p class="botao-cadastrar">
-            <input type="submit" value="Cadastrar" id="id-cadastrar">
-          </p>
-
-      </form>
-      <section>
-        <p>
-          <a href="../login/login.html" class="link-login">Já possui conta? Faça o login</a>
-        </p>
+        </section>
       </section>
-    </section>
+      <section class ="logins flex flex-col flex-nowrap justify-center items-center gap-5 p-[50px] max-[768px]:p-[30px] max-[768px]:mb-16">
+        <div class="div-login google bg-light-white p-3 flex justify-start items-center w-full gap-6 rounded-[20px] hover:bg-[#2270ec] hover:cursor-pointer max-[768px]:p-2">
+          <iconify-icon class="text-4xl p-2 bg-light-white max-[768px]:text-[2rem]" icon="logos:google-icon"></iconify-icon>
+          <p class="text-2xl max-[768px]:text-[1rem]">Login com Google</p>       
+        </div>
+        <div class="div-login facebook bg-light-white p-3 flex justify-start items-center w-full gap-6 rounded-[20px] hover:bg-[#2270ec] hover:cursor-pointer max-[768px]:p-2">
+          <iconify-icon class="text-4xl p-2 bg-light-white max-[768px]:text-[2rem]" icon="logos:facebook"></iconify-icon>
+          <p class="text-2xl max-[768px]:text-[1rem]">Login com Facebook</p>       
+        </div>
+        <div class="div-login twitter bg-light-white p-3 flex justify-start items-center w-full gap-6 rounded-[20px] hover:bg-[#2270ec] hover:cursor-pointer max-[768px]:p-2">
+          <iconify-icon class="text-4xl p-2 bg-light-white max-[768px]:text-[2rem]" icon="logos:twitter" width="36px" height="36px"></iconify-icon> 
+          <p class="text-2xl max-[768px]:text-[1rem]">Login com Twitter</p>       
+        </div>
+      </section>
+    </div>
   </main>
 
-  <footer> <!-- RODAPÉ -->
+<!-- RODAPÉ -->
+  <footer>
     <section class="fim link">
       <a href="#">Sobre Nós</a>
       <a href="#">Termos de Uso</a>
@@ -102,10 +138,10 @@
       <a href="#">Política de Privacidade</a>
       <a href="creditos.html">Créditos</a>
       <picture class="redes">   
-      <iconify-icon icon="logos:whatsapp-icon" class="ic"></iconify-icon>
-      <iconify-icon icon="skill-icons:twitter" class="ic"></iconify-icon>
-      <iconify-icon icon="skill-icons:instagram" class="ic"></iconify-icon>
-      <iconify-icon icon="logos:facebook" class="ic"></iconify-icon>
+        <iconify-icon icon="logos:whatsapp-icon" class="ic"></iconify-icon>
+        <iconify-icon icon="skill-icons:twitter" class="ic"></iconify-icon>
+        <iconify-icon icon="skill-icons:instagram" class="ic"></iconify-icon>
+        <iconify-icon icon="logos:facebook" class="ic"></iconify-icon>
       </picture>
     </section>
     <section class="fim2">

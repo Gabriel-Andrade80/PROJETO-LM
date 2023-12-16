@@ -180,7 +180,7 @@ main {
 }
 
 main p {
-  font-size: 15px;
+  font-size: 20px;
   gap: 1px;
 }
 
@@ -189,6 +189,9 @@ main p {
   grid-template-areas:
     "aside main"
     "aside2 main2";
+  justify-items: center;
+  align-items: center;
+  width: 1100px;
 }
 
 .livro {
@@ -211,6 +214,7 @@ main p {
 
 .g-main2 {
   grid-area: aside2;
+  margin-left: 50px;
 }
 
 .g-main {
@@ -301,6 +305,7 @@ footer {
 
 .ic {
   padding: 2px;
+  transition: all 0s;
 }
 
 .ic:hover {

@@ -177,17 +177,21 @@ input:focus {
   flex-direction: column;
   margin-top: 5%;
   align-items: center;
-  color: black;
-  gap: 1.5em;
-  font-size: 1.5rem;
+  color: white;
+  /* gap: 1.5em; */
+  font-size: 2rem;
 }
 .form {
-  background-color: rgba(255,255,255, 0.5);
-  padding: 10%;
-  border-radius: 10%;
+  background-color: rgba(0,30,60, 0.3);
+  padding: 30px;
+  border-radius: 50px;
   display: flex;
   flex-flow: column;
   gap: 15px;
+}
+.logins {
+  background-color: rgba(0,30,60, 0.3);
+  border-radius: 30px;
 }
 .form input {
   font-size: 1.2rem;
@@ -217,10 +221,6 @@ input:focus {
 .botao-logar {
   margin-top: 15px;
   align-self: center;
-}
-.div-login:hover {
-  background-color: #2270ec;
-  cursor: pointer;
 }
 
 /*FOOTER*/
@@ -271,7 +271,6 @@ footer {
 }
 
 /*RESPONSIVIDADE*/
-
 /*1024*/
 @media (max-width: 1024px){
   /*NAV*/
@@ -295,7 +294,7 @@ footer {
     font-size: 1rem;
   }
 /*MAIN*/
-  main {
+  .main {
     margin-top: 76px;
     height: calc(100vh - 76px);
   }
@@ -311,7 +310,6 @@ footer {
     gap: 20px;
   }
 }
-
 /*768*/
 @media (max-width: 768px) {
 /*NAV*/
@@ -336,9 +334,14 @@ footer {
     font-size: 1rem;
   }
 /*MAIN*/
-  main {
+  .main {
     margin-top: 60px;
     height: calc(100vh - 60px);
+  }
+  .formulario {
+    align-items: center;
+    margin-top: 0;
+    font-size: 1.5rem;
   }
 /*FOOTER*/
   .fim {
@@ -346,7 +349,7 @@ footer {
     line-height: 2rem;
     gap: 40px;
     font-size: 1rem;
-    }
+  }
   .redes{
     display: flex;
     justify-content: center;
@@ -363,6 +366,9 @@ footer {
 /*570*/
 @media (max-width: 570px) {
 /*NAV*/
+  .logo {
+    margin-left: 4px;
+  }
   .barra-fixa{
     gap: 3.8px;
   }
@@ -405,7 +411,7 @@ footer {
   }
   
   /*HEADER*/
-  main {
+  .main {
     background-image: url(../images/header-2.jpg);
   }
   
@@ -441,6 +447,11 @@ footer {
 
 /*425*/  
 @media (max-width: 425px) {
+  #id-entrar {
+    padding: 0px;
+    width: 150px;
+    font-size: 1.8rem;
+  }
 /*FOOTER*/
   .redes {
       flex-flow: row wrap;
