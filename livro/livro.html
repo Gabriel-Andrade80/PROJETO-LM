@@ -14,7 +14,7 @@
   <title>LivroPub - Livro</title>
 </head>
 
-<body>
+  <body>
   <!--BARRA DE NAVEGAÇÃO FIXA-->
   <nav class="barra-fixa">
     <a href="../index/index.html"><img src="../images/logo books ellipse.png" alt="" class="logo"></a>
@@ -33,19 +33,19 @@
       <li class=" link sub"><a href='#'>Categorias</a></li>
       <li class=" link login-grid">
         <button class="button-login shadow">
+
           <a href="../login/login.html" class="login">Login
             <iconify-icon icon="material-symbols:login" class="span-login"></iconify-icon>
           </a>
         </button>
       </li>
-      <li class="icone-menu">
-        <span class="material-symbols-outlined span-menu">menu</span>
+      <li class="icone-menu">  
+      <span class="material-symbols-outlined span-menu">menu</span>
       </li>
-    </ul>
+    </ul>   
   </nav>
-  <!--FIM DA BARRA DE NAVEGAÇÃO FIXA-->
 
-  <!--MENU HAMBURGUER-->
+  <!--MENU-HAMBURGUER-->
   <section class="secao-menu">
     <div class="menu-hamburguer">
       <ul class="opcoes-menu">
@@ -66,30 +66,44 @@
   <main>
     <div class="span">
       <img class="livro" src="../images/dom_casmurro.jpg" alt="" class="livro">
-      <h1 class="g-main">
-        <strong>Dom Casmurro</strong>
+      <section class="caracteristicas">
+        <h1 class="g-main">
+          <strong>Dom Casmurro</strong><br>
+        </h1>
         <p>Autor: Machado de Assis</p>
         <p>Gêneros: Romance, Ficção, Realismo Literário, Memórias</p>
         <p>Data da primeira publicação: 1899</p>
         <p>Editora: Livraria Garnier (primeira edição)</p>
         <p>Idioma: Português</p>
-        <!-- <img src=livro.css class="img-livro"> -->
-        <a href="#">
-          <button class="Bounce baixar">
+        <button class="Bounce baixar link">
+          <a class="a-download" href="#">
             <p>Download</p>
             <iconify-icon icon="material-symbols:download"></iconify-icon>
-          </button>
-        </a>
-      </h1>
-      <h2 class="g-main2"><strong>Sinopse:</strong>
-        <p class="g-main2">"Dom Casmurro" conta a história de Bento Santiago (Bentinho), apelidado de Dom Casmurro por
-          ser calado e introvertido. Na adolescência, apaixona-se por Capítu, abandonando o seminário e, com ele, os
-          desígnios traçados por sua mãe, Dona Glória, para que se tornasse padre.</p>
-      </h2>
-      <style>
-        }
-      </style>
+          </a>
+        </button>
+      </section>
+      <section class="sec-sinopse">
+        <h2 class="h2-sinopse"><strong>Sinopse:</strong></h2>
+        <p class="p-sinopse"><br>"Dom Casmurro" conta a história de Bento Santiago (Bentinho), apelidado de Dom Casmurro por
+            ser calado e introvertido. Na adolescência, apaixona-se por Capítu, abandonando o seminário e, com ele, os desígnios traçados por sua mãe, Dona Glória, para que se tornasse padre.</p>
+      </section>
+        <!-- <img src=livro.css class="img-livro"> -->   
     </div>
+      <section id="tres" class="g-aside2"> <!-- SESSÃO AVALIAÇÃO -->
+      <h1 class="titulos">Comentarios</h1>
+      <div class="div-avaliacoes">
+        <div class="div-pessoa1">
+          
+          <p>Lorem ipson dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+          </p>
+        </div>
+        <div class="div-pessoa2">
+          
+          <p>Lorem ipson dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+          </p>
+        </div>
+      </div>
+      </section>
   </main>
 
   <!-- RODAPÉ -->
@@ -114,6 +128,6 @@
       </p>
     </section>
   </footer>
+  <script src="../menu.js"></script> 
 </body>
-
 </html>
