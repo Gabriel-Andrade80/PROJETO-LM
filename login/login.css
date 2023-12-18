@@ -457,3 +457,9 @@ footer {
       flex-flow: row wrap;
   }
 }
+
+@media (max-width: 375px) {
+  .logo{
+    padding: 9px 0px;
+  }
+}

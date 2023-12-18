@@ -87,8 +87,8 @@ span-login,
   justify-content: space-between;
   align-items: center;
   width: 100%;
+        
 }
-
 input:focus {
   box-shadow: 0 0 0 0;
   outline: 0;
@@ -252,7 +252,7 @@ main p {
   border: 2px white solid;
   animation: 2s;
   width: 200px;
-}
+} 
 
 .baixar:hover {
   background-color: white;
